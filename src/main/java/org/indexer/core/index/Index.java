@@ -1,16 +1,11 @@
 package org.indexer.core.index;
 
 import net.jcip.annotations.ThreadSafe;
+import org.indexer.core.cache.CachedPostingListManager;
 import org.indexer.core.trie.Trie;
-import org.indexer.iops.FileStreamPositionedTokenizer;
-import org.indexer.iops.PositionedToken;
 
-import java.io.IOException;
 import java.io.Serializable;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Index, built upon the underlined tries structures. Gives the API to

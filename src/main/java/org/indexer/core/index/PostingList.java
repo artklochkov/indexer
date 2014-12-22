@@ -1,6 +1,7 @@
 package org.indexer.core.index;
 
 import net.jcip.annotations.ThreadSafe;
+import org.indexer.core.exception.PostingListLoadException;
 
 import java.io.*;
 import java.util.Collection;
